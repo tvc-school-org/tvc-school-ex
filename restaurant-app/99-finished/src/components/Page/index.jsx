@@ -4,6 +4,7 @@ import Header from './Header'
 import Menu from './Menu'
 import Gallery from './Gallery'
 import MenuEdit from './MenuEdit'
+import menuItems from '../../menu-data'
 
 class Page extends Component {
   constructor(props) {
@@ -11,15 +12,21 @@ class Page extends Component {
     this.state = {
       signedIn: false,
       editMenu: false,
+      menuItems: menuItems,
     }
   }
   handleSignInClick = () => {
-    console.log('handleSignInClick')
     this.setState({ signedIn: !this.state.signedIn })
   }
   handleEditMenuClick = () => {
-    console.log('handleEditMenuClick')
     this.setState({ editMenu: !this.state.editMenu })
+  }
+  handleMenuItemChange = (index, fieldName, value) => {
+    let newMenuItems = this.state.menuItems
+    newMenuItems[index][fieldName] = value
+    this.setState({
+      menuItems: newMenuItems,
+    })
   }
   render() {
     return (
@@ -32,11 +39,15 @@ class Page extends Component {
               signedIn={this.state.signedIn}
             />
             <Gallery />
-            <Menu />
+            <Menu
+              menuItems={this.state.menuItems}
+            />
           </div>
           : <div>
             <MenuEdit
+              menuItems={this.state.menuItems}
               handleEditMenuClick={this.handleEditMenuClick}
+              handleMenuItemChange={this.handleMenuItemChange}
             />
           </div>
         }
