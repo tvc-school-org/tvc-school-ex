@@ -1,0 +1,7 @@
+.gallery-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+.gallery h2 {
+  text-align: center;
+}

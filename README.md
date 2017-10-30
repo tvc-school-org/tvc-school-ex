@@ -1,0 +1,5 @@
+- make the header
+- make the gallery
+- make the menu
+- make navigation component
+- make admin menu
