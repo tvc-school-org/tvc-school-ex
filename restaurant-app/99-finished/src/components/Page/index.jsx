@@ -10,8 +10,8 @@ class Page extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      signedIn: false,
-      editMenu: false,
+      signedIn: true,
+      editMenu: true,
       menuItems: menuItems,
     }
   }

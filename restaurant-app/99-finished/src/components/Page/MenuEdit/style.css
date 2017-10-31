@@ -1,3 +1,11 @@
-.menu h2 {
-  text-align: center;
+.menu-edit {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-edit-done {
+  font-size: 1.2em !important;
+  margin-top: 30px !important;
 }

@@ -1,15 +1,29 @@
-.menu-item {
+.menu-edit-item {
+  background-color: rgb(240, 250, 250);
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
-  max-width: 80%;
-  margin: auto;
+  margin: 5px auto;
+  width: 70%;
 }
-.menu-item-title {
-  font-size: 1.2em;
+.menu-edit-item-left {
+  background-color: transparent;
+  width: 500px;
+}
+.title-input {
+  background-color: transparent;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 3px;
+  width: 485px;
 }
-.menu-item-description {
-  padding: 3px;
+.description-input {
+  background-color: transparent;
+  width: 485px;
+}
+.menu-edit-item-right {
+  background-color: transparent;
+  width: 130px;
+}
+.price-input {
+  background-color: transparent;
+  width: 125px;
 }

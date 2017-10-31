@@ -18,12 +18,12 @@ const MenuEdit = (props) => {
     />
   ))
   return (
-    <div className='menu'>
+    <div className='menu-edit'>
       <h2>Our Menu</h2>
-      <button
+      {renderItems}
+      <button className='button menu-edit-done'
         onClick={props.handleEditMenuClick}
       >Done</button>
-      {renderItems}
     </div>
   )
 }
