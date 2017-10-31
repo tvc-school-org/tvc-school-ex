@@ -31,3 +31,47 @@ button:focus {
   border-color: #4cae4c;
   box-shadow: 0 0 0 8px rgba(34, 195, 101, 0.1);
 }
+
+/* Gallery */
+.gallery-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+.gallery h2 {
+  text-align: center;
+}
+
+/* GalleryItem */
+.gallery-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 80%;
+  margin: 30px auto 30px auto;
+}
+.gallery-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 3px;
+}
+.gallery-item-description {
+  padding: 3px;
+}
+.gallery-item-image {
+  max-height: 200px;
+}
+
+/* Nav */
+.nav-ul {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 22px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.nav-ul li {
+  margin: 5px 5px;
+}
+.nav-ul li:hover {
+  text-decoration: underline;
+}

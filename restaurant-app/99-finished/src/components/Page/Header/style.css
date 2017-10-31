@@ -1,19 +1,14 @@
 .header {
   align-items: stretch;
-  color: white;
-  display: flex;
   background: #000000;
   background: -webkit-linear-gradient(to left, #0f980f, #003c00);
   background: linear-gradient(to left, #0f980f, #003c00);
-  /*height: 400px;*/
+  color: white;
+  display: flex;
   justify-content: space-between;
   padding: 0 40px 0 40px;
-  /*text-align: right;*/
 }
-.vegies {
-  width: 100%;
-  opacity: 0.8;
-}
+
 .header-left {
   align-items: center;
   display: flex;
@@ -27,8 +22,4 @@
 }
 .header-titles {
   text-align: center;
-}
-.sign-in {
-  display: flex;
-  justify-content: flex-end;
 }
