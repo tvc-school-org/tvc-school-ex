@@ -1,10 +1,6 @@
-import React, { Component } from 'react'
-import MenuItem from './MenuItem'
-import items from '../../../menu-data'
+import React from 'react'
 
 const MenuEdit = (props) => {
-
-
 
   const renderItems = props.menuItems.map((i, index) => (
     <MenuItem
@@ -21,8 +17,9 @@ const MenuEdit = (props) => {
       <h2>Our Menu</h2>
       {renderItems}
       <button className='button menu-edit-done'
-        onClick={props.handleEditMenuClick}
-      >Done</button>
+        onClick={props.handleEditMenuClick}>
+        Done
+      </button>
     </div>
   )
 }

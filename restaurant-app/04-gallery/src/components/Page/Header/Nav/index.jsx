@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Nav = (props) => {
+const Nav = () => {
   return (
     <ul className='nav-ul'>
       <li><button className='button' href='#menu'>Menu</button></li>

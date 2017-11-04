@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import MenuItem from './MenuItem'
+import React from 'react'
 
 const Menu = (props) => {
   const renderItems = props.menuItems.map((i, index) => (

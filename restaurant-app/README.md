@@ -1,0 +1,1 @@
+# If you are learn React don't look at this code. Go to the [Ract Challenge](http://react-challenge-01.s3-website-us-west-2.amazonaws.com/react-toc/restaurant-app-toc) and work through the challenges. Look back here when you are done or very stuck.
